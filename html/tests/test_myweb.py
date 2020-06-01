@@ -11,3 +11,8 @@ def test_home():
     response = app.test_client().get('/home')
     assert response.status_code == 200
     assert response.data == b'this is home page of my app'
+
+def test_login():
+    response = app.test_client().get('/login')
+    assert response.status_code == 200
+    assert response.data == b'this is login page of my app'
