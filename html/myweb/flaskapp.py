@@ -7,5 +7,10 @@ def hello_world():
 @app.route('/home')
 def app_home():
   return 'this is home page of my app'
+
+@app.route('/login')
+def app_home():
+  return 'this is login page of my app'
+
 if __name__ == '__main__':
   app.run()
